@@ -1,0 +1,942 @@
+2022-07-11 17:54:44.8007 Info Message Template Auto Format enabled
+2022-07-11 17:54:44.8305 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 17:54:44.8544 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 17:54:44.8562 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:54:44.8593 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 17:54:44.8611 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 17:54:44.8625 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 17:54:44.8634 Info Adding target FileTarget(Name=logfile)
+2022-07-11 17:54:44.8638 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 17:54:44.8638 Trace ParseRulesElement
+2022-07-11 17:54:44.9144 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 17:54:44.9155 Debug --- NLog configuration dump ---
+2022-07-11 17:54:44.9158 Debug Targets:
+2022-07-11 17:54:44.9158 Debug FileTarget(Name=logfile)
+2022-07-11 17:54:44.9158 Debug Rules:
+2022-07-11 17:54:44.9175 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 17:54:44.9175 Debug --- End of NLog configuration dump ---
+2022-07-11 17:54:44.9199 Trace FindReachableObject<System.Object>:
+2022-07-11 17:54:44.9199 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 17:54:44.9210 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 17:54:44.9220 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 17:54:44.9220 Trace   Scanning Property FileName '.\logs\allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 17:54:44.9220 Trace   Scanning SimpleLayout '.\logs\allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:54:44.9228 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:54:44.9228 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 17:54:44.9228 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 17:54:44.9228 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 17:54:44.9239 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:54:44.9239 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 17:54:44.9239 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 17:54:44.9239 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 17:54:44.9248 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 17:54:44.9258 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 17:54:44.9268 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 17:54:44.9292 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 17:54:44.9298 Trace Initializing Layout Renderer: ${message}
+2022-07-11 17:54:44.9298 Trace Initializing ${message}
+2022-07-11 17:54:44.9321 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 17:54:44.9321 Trace Scanning SimpleLayout '${message}'
+2022-07-11 17:54:44.9321 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:54:44.9321 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 17:54:44.9336 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 17:54:44.9336 Trace Initializing .\logs\allCreatedDotPseudogitLocations.txt
+2022-07-11 17:54:44.9339 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 17:54:44.9339 Trace Scanning SimpleLayout '.\logs\allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:54:44.9339 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:54:44.9339 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 17:54:44.9339 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 17:54:44.9352 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 17:54:44.9352 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 17:54:44.9352 Trace  Scanning Property FileName '.\logs\allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 17:54:44.9352 Trace  Scanning SimpleLayout '.\logs\allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:54:44.9352 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 17:54:44.9359 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 17:54:44.9359 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 17:54:44.9359 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 17:54:44.9368 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 17:54:58.8750 Debug Targets configured when LogLevel >= Debug for Logger: LoggerService.LoggerManager
+2022-07-11 17:54:58.8750 Debug Logger LoggerService.LoggerManager [Debug] => logfile
+2022-07-11 17:54:58.8750 Debug Logger LoggerService.LoggerManager [Info] => logfile
+2022-07-11 17:54:58.8750 Debug Logger LoggerService.LoggerManager [Warn] => logfile
+2022-07-11 17:54:58.8758 Debug Logger LoggerService.LoggerManager [Error] => logfile
+2022-07-11 17:54:58.8758 Debug Logger LoggerService.LoggerManager [Fatal] => logfile
+2022-07-11 17:54:58.8822 Debug FileTarget(Name=logfile): Preparing for new file '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.\logs\allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:54:58.8845 Debug FileTarget(Name=logfile): Creating file appender: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.\logs\allCreatedDotPseudogitLocations.txt
+2022-07-11 17:54:58.8855 Trace FileTarget(Name=logfile): Opening /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.\logs\allCreatedDotPseudogitLocations.txt with allowFileSharedWriting=False
+2022-07-11 17:58:59.0563 Info Configuration file change detected! Reloading in 1000ms...
+2022-07-11 17:59:00.0657 Info Reloading configuration...
+2022-07-11 17:59:00.0715 Info Loading NLog config from XML file: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 17:59:00.0814 Trace ParseNLogElement
+2022-07-11 17:59:00.0834 Trace ParseNLogConfig
+2022-07-11 17:59:00.0866 Info Message Template Auto Format enabled
+2022-07-11 17:59:00.0893 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 17:59:00.0900 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:59:00.0913 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 17:59:00.0913 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 17:59:00.0928 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 17:59:00.0933 Info Adding target FileTarget(Name=logfile)
+2022-07-11 17:59:00.0940 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 17:59:00.0940 Trace ParseRulesElement
+2022-07-11 17:59:00.0971 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 17:59:00.0996 Info Closing old configuration.
+2022-07-11 17:59:00.1009 Debug LogFactory Flush with timeout=15 secs
+2022-07-11 17:59:00.1023 Trace Flushing all 1 targets...
+2022-07-11 17:59:00.1044 Trace ForEachItemInParallel() 1 items
+2022-07-11 17:59:00.1059 Trace FileTarget(Name=logfile): FlushAsync
+2022-07-11 17:59:00.1070 Trace Continuation invoked: 
+2022-07-11 17:59:00.1070 Trace Parallel task completed. 0 items remaining
+2022-07-11 17:59:00.1092 Debug Flush completed
+2022-07-11 17:59:00.1092 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-07-11 17:59:00.1107 Debug Closing logging configuration...
+2022-07-11 17:59:00.1110 Trace Closing FileTarget(Name=logfile)
+2022-07-11 17:59:00.1110 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 17:59:00.1140 Trace FileTarget(Name=logfile): FinalizeFile '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.\logs\allCreatedDotPseudogitLocations.txt, isArchiving: False'
+2022-07-11 17:59:00.1156 Debug FileTarget(Name=logfile): FileAppender Closing Invalidate - /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.\logs\allCreatedDotPseudogitLocations.txt
+2022-07-11 17:59:00.1182 Trace FileTarget: Closing '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.\logs\allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:59:00.1207 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 17:59:00.1210 Trace Closing .\logs\allCreatedDotPseudogitLocations.txt
+2022-07-11 17:59:00.1210 Trace Closing Layout Renderer: ${literal}
+2022-07-11 17:59:00.1219 Trace Closing ${message}
+2022-07-11 17:59:00.1219 Trace Closing Layout Renderer: ${message}
+2022-07-11 17:59:00.1219 Debug Finished closing logging configuration.
+2022-07-11 17:59:00.1912 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 17:59:00.1912 Debug --- NLog configuration dump ---
+2022-07-11 17:59:00.1920 Debug Targets:
+2022-07-11 17:59:00.1920 Debug FileTarget(Name=logfile)
+2022-07-11 17:59:00.1920 Debug Rules:
+2022-07-11 17:59:00.1920 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 17:59:00.1920 Debug --- End of NLog configuration dump ---
+2022-07-11 17:59:00.1920 Trace FindReachableObject<System.Object>:
+2022-07-11 17:59:00.1929 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 17:59:00.1929 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 17:59:00.1929 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 17:59:00.1929 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 17:59:00.1929 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:59:00.1929 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:59:00.1929 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 17:59:00.1943 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 17:59:00.1943 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 17:59:00.1943 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:59:00.1949 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 17:59:00.1949 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 17:59:00.1949 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 17:59:00.1949 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 17:59:00.1949 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 17:59:00.1960 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 17:59:00.1960 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 17:59:00.1960 Trace Initializing Layout Renderer: ${message}
+2022-07-11 17:59:00.1960 Trace Initializing ${message}
+2022-07-11 17:59:00.1960 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 17:59:00.1960 Trace Scanning SimpleLayout '${message}'
+2022-07-11 17:59:00.1969 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:59:00.1969 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 17:59:00.1969 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 17:59:00.1969 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 17:59:00.1969 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 17:59:00.1969 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:59:00.1969 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 17:59:00.1979 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 17:59:00.1979 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 17:59:00.1979 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 17:59:00.1979 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 17:59:00.1979 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 17:59:00.1979 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 17:59:00.1979 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 17:59:00.1989 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 17:59:00.1989 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 17:59:00.1989 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 17:59:00.1989 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 17:59:00.1989 Debug Targets configured when LogLevel >= Debug for Logger: LoggerService.LoggerManager
+2022-07-11 17:59:00.1989 Debug Logger LoggerService.LoggerManager [Debug] => logfile
+2022-07-11 17:59:00.1989 Debug Logger LoggerService.LoggerManager [Info] => logfile
+2022-07-11 17:59:00.1999 Debug Logger LoggerService.LoggerManager [Warn] => logfile
+2022-07-11 17:59:00.1999 Debug Logger LoggerService.LoggerManager [Error] => logfile
+2022-07-11 17:59:00.1999 Debug Logger LoggerService.LoggerManager [Fatal] => logfile
+2022-07-11 17:59:32.3357 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 17:59:32.3378 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 17:59:32.3448 Debug Targets not configured for Logger: LoggerService.LoggerManager
+2022-07-11 17:59:32.3485 Debug Closing logging configuration...
+2022-07-11 17:59:32.3496 Trace Closing FileTarget(Name=logfile)
+2022-07-11 17:59:32.3499 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 17:59:32.3514 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 17:59:32.3534 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 17:59:32.3538 Trace Closing Layout Renderer: ${literal}
+2022-07-11 17:59:32.3538 Trace Closing ${message}
+2022-07-11 17:59:32.3538 Trace Closing Layout Renderer: ${message}
+2022-07-11 17:59:32.3538 Debug Finished closing logging configuration.
+2022-07-11 17:59:32.3538 Info LogFactory has been closed.
+2022-07-11 18:55:25.0731 Info Message Template Auto Format enabled
+2022-07-11 18:55:25.0971 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 18:55:25.1154 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 18:55:25.1170 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 18:55:25.1191 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 18:55:25.1215 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 18:55:25.1227 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 18:55:25.1237 Info Adding target FileTarget(Name=logfile)
+2022-07-11 18:55:25.1237 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 18:55:25.1246 Trace ParseRulesElement
+2022-07-11 18:55:25.1765 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 18:55:25.1774 Debug --- NLog configuration dump ---
+2022-07-11 18:55:25.1776 Debug Targets:
+2022-07-11 18:55:25.1776 Debug FileTarget(Name=logfile)
+2022-07-11 18:55:25.1776 Debug Rules:
+2022-07-11 18:55:25.1792 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 18:55:25.1792 Debug --- End of NLog configuration dump ---
+2022-07-11 18:55:25.1814 Trace FindReachableObject<System.Object>:
+2022-07-11 18:55:25.1818 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 18:55:25.1818 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 18:55:25.1830 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 18:55:25.1830 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 18:55:25.1836 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 18:55:25.1836 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 18:55:25.1836 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 18:55:25.1836 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 18:55:25.1836 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 18:55:25.1845 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 18:55:25.1845 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 18:55:25.1845 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 18:55:25.1845 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 18:55:25.1845 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 18:55:25.1864 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 18:55:25.1873 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 18:55:25.1892 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 18:55:25.1892 Trace Initializing Layout Renderer: ${message}
+2022-07-11 18:55:25.1897 Trace Initializing ${message}
+2022-07-11 18:55:25.1910 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 18:55:25.1910 Trace Scanning SimpleLayout '${message}'
+2022-07-11 18:55:25.1910 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 18:55:25.1910 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 18:55:25.1922 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 18:55:25.1922 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 18:55:25.1922 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 18:55:25.1926 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 18:55:25.1926 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 18:55:25.1926 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 18:55:25.1926 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 18:55:25.1937 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 18:55:25.1937 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 18:55:25.1937 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 18:55:25.1937 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 18:55:25.1937 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 18:55:25.1937 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 18:55:25.1946 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 18:55:25.1946 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 18:55:25.1946 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 18:55:30.8939 Debug Targets configured when LogLevel >= Debug for Logger: LoggerService.LoggerManager
+2022-07-11 18:55:30.8939 Debug Logger LoggerService.LoggerManager [Debug] => logfile
+2022-07-11 18:55:30.8939 Debug Logger LoggerService.LoggerManager [Info] => logfile
+2022-07-11 18:55:30.8939 Debug Logger LoggerService.LoggerManager [Warn] => logfile
+2022-07-11 18:55:30.8946 Debug Logger LoggerService.LoggerManager [Error] => logfile
+2022-07-11 18:55:30.8946 Debug Logger LoggerService.LoggerManager [Fatal] => logfile
+2022-07-11 18:55:30.9005 Debug FileTarget(Name=logfile): Preparing for new file '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 18:55:30.9030 Debug FileTarget(Name=logfile): Creating file appender: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 18:55:30.9039 Trace FileTarget(Name=logfile): Opening /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt with allowFileSharedWriting=False
+2022-07-11 22:32:56.4638 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 22:32:56.4672 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 22:32:56.4687 Debug Targets not configured for Logger: LoggerService.LoggerManager
+2022-07-11 22:32:56.4699 Debug Closing logging configuration...
+2022-07-11 22:32:56.4705 Trace Closing FileTarget(Name=logfile)
+2022-07-11 22:32:56.4710 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 22:32:56.4730 Trace FileTarget(Name=logfile): FinalizeFile '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt, isArchiving: False'
+2022-07-11 22:32:56.4740 Debug FileTarget(Name=logfile): FileAppender Closing Invalidate - /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:32:56.4740 Trace FileTarget: Closing '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:32:56.4759 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 22:32:56.4759 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:32:56.4759 Trace Closing Layout Renderer: ${literal}
+2022-07-11 22:32:56.4759 Trace Closing ${message}
+2022-07-11 22:32:56.4759 Trace Closing Layout Renderer: ${message}
+2022-07-11 22:32:56.4770 Debug Finished closing logging configuration.
+2022-07-11 22:32:56.4770 Info LogFactory has been closed.
+2022-07-11 22:42:48.6620 Info Message Template Auto Format enabled
+2022-07-11 22:42:48.6912 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 22:42:48.7132 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 22:42:48.7149 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:42:48.7170 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 22:42:48.7195 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:42:48.7207 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:42:48.7217 Info Adding target FileTarget(Name=logfile)
+2022-07-11 22:42:48.7221 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 22:42:48.7221 Trace ParseRulesElement
+2022-07-11 22:42:48.7941 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 22:42:48.7950 Debug --- NLog configuration dump ---
+2022-07-11 22:42:48.7958 Debug Targets:
+2022-07-11 22:42:48.7958 Debug FileTarget(Name=logfile)
+2022-07-11 22:42:48.7958 Debug Rules:
+2022-07-11 22:42:48.7975 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 22:42:48.7975 Debug --- End of NLog configuration dump ---
+2022-07-11 22:42:48.7996 Trace FindReachableObject<System.Object>:
+2022-07-11 22:42:48.7999 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 22:42:48.7999 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 22:42:48.8012 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:42:48.8012 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:42:48.8012 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:42:48.8018 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:42:48.8018 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:42:48.8018 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:42:48.8018 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 22:42:48.8018 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:42:48.8018 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:42:48.8028 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:42:48.8028 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 22:42:48.8028 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 22:42:48.8042 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 22:42:48.8050 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 22:42:48.8070 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 22:42:48.8070 Trace Initializing Layout Renderer: ${message}
+2022-07-11 22:42:48.8070 Trace Initializing ${message}
+2022-07-11 22:42:48.8089 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:42:48.8089 Trace Scanning SimpleLayout '${message}'
+2022-07-11 22:42:48.8089 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:42:48.8089 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:42:48.8101 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 22:42:48.8101 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:42:48.8101 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:42:48.8101 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:42:48.8101 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:42:48.8108 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:42:48.8108 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 22:42:48.8108 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 22:42:48.8119 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:42:48.8119 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:42:48.8119 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:42:48.8119 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:42:48.8119 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 22:42:48.8119 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:42:48.8129 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 22:42:48.8129 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 22:44:07.8370 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 22:44:07.8392 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 22:44:07.8420 Debug Closing logging configuration...
+2022-07-11 22:44:07.8420 Trace Closing FileTarget(Name=logfile)
+2022-07-11 22:44:07.8420 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 22:44:07.8448 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 22:44:07.8451 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:44:07.8451 Trace Closing Layout Renderer: ${literal}
+2022-07-11 22:44:07.8451 Trace Closing ${message}
+2022-07-11 22:44:07.8461 Trace Closing Layout Renderer: ${message}
+2022-07-11 22:44:07.8461 Debug Finished closing logging configuration.
+2022-07-11 22:44:07.8461 Info LogFactory has been closed.
+2022-07-11 22:44:08.6543 Info Message Template Auto Format enabled
+2022-07-11 22:44:08.6864 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 22:44:08.7035 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 22:44:08.7054 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:44:08.7077 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 22:44:08.7105 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:44:08.7118 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:44:08.7133 Info Adding target FileTarget(Name=logfile)
+2022-07-11 22:44:08.7133 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 22:44:08.7142 Trace ParseRulesElement
+2022-07-11 22:44:08.7863 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 22:44:08.7880 Debug --- NLog configuration dump ---
+2022-07-11 22:44:08.7880 Debug Targets:
+2022-07-11 22:44:08.7894 Debug FileTarget(Name=logfile)
+2022-07-11 22:44:08.7894 Debug Rules:
+2022-07-11 22:44:08.7906 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 22:44:08.7906 Debug --- End of NLog configuration dump ---
+2022-07-11 22:44:08.7928 Trace FindReachableObject<System.Object>:
+2022-07-11 22:44:08.7932 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 22:44:08.7932 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 22:44:08.7945 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:44:08.7945 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:44:08.7950 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:44:08.7950 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:44:08.7950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:44:08.7950 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:44:08.7950 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 22:44:08.7950 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:44:08.7960 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:44:08.7960 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:44:08.7960 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 22:44:08.7960 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 22:44:08.7977 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 22:44:08.7988 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 22:44:08.8008 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 22:44:08.8010 Trace Initializing Layout Renderer: ${message}
+2022-07-11 22:44:08.8010 Trace Initializing ${message}
+2022-07-11 22:44:08.8027 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:44:08.8027 Trace Scanning SimpleLayout '${message}'
+2022-07-11 22:44:08.8030 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:44:08.8030 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:44:08.8040 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 22:44:08.8040 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:44:08.8040 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:44:08.8040 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:44:08.8040 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:44:08.8040 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:44:08.8040 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 22:44:08.8055 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 22:44:08.8055 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:44:08.8055 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:44:08.8055 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:44:08.8060 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:44:08.8060 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 22:44:08.8060 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:44:08.8060 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 22:44:08.8073 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 22:47:57.8991 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 22:47:57.9020 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 22:47:57.9045 Debug Closing logging configuration...
+2022-07-11 22:47:57.9045 Trace Closing FileTarget(Name=logfile)
+2022-07-11 22:47:57.9045 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 22:47:57.9072 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 22:47:57.9072 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:47:57.9083 Trace Closing Layout Renderer: ${literal}
+2022-07-11 22:47:57.9087 Trace Closing ${message}
+2022-07-11 22:47:57.9087 Trace Closing Layout Renderer: ${message}
+2022-07-11 22:47:57.9087 Debug Finished closing logging configuration.
+2022-07-11 22:47:57.9087 Info LogFactory has been closed.
+2022-07-11 22:48:02.1915 Info Message Template Auto Format enabled
+2022-07-11 22:48:02.2211 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 22:48:02.2501 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 22:48:02.2518 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:48:02.2532 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 22:48:02.2546 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:48:02.2555 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:48:02.2555 Info Adding target FileTarget(Name=logfile)
+2022-07-11 22:48:02.2568 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 22:48:02.2568 Trace ParseRulesElement
+2022-07-11 22:48:02.3065 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 22:48:02.3075 Debug --- NLog configuration dump ---
+2022-07-11 22:48:02.3086 Debug Targets:
+2022-07-11 22:48:02.3086 Debug FileTarget(Name=logfile)
+2022-07-11 22:48:02.3097 Debug Rules:
+2022-07-11 22:48:02.3097 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 22:48:02.3106 Debug --- End of NLog configuration dump ---
+2022-07-11 22:48:02.3106 Trace FindReachableObject<System.Object>:
+2022-07-11 22:48:02.3115 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 22:48:02.3115 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 22:48:02.3129 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:48:02.3129 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:48:02.3136 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:48:02.3136 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:48:02.3148 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:48:02.3148 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:48:02.3148 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 22:48:02.3148 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:48:02.3155 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:48:02.3155 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:48:02.3155 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 22:48:02.3155 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 22:48:02.3170 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 22:48:02.3178 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 22:48:02.3195 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 22:48:02.3195 Trace Initializing Layout Renderer: ${message}
+2022-07-11 22:48:02.3195 Trace Initializing ${message}
+2022-07-11 22:48:02.3209 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:48:02.3215 Trace Scanning SimpleLayout '${message}'
+2022-07-11 22:48:02.3215 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:48:02.3215 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:48:02.3230 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 22:48:02.3230 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:48:02.3230 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:48:02.3230 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:48:02.3236 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:48:02.3236 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:48:02.3236 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 22:48:02.3252 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 22:48:02.3252 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:48:02.3252 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:48:02.3256 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:48:02.3256 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:48:02.3256 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 22:48:02.3256 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:48:02.3256 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 22:48:02.3269 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 22:50:07.8531 Info Message Template Auto Format enabled
+2022-07-11 22:50:07.8862 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 22:50:07.9045 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 22:50:07.9063 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:07.9091 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 22:50:07.9119 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:50:07.9134 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:50:07.9145 Info Adding target FileTarget(Name=logfile)
+2022-07-11 22:50:07.9145 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 22:50:07.9154 Trace ParseRulesElement
+2022-07-11 22:50:07.9705 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 22:50:07.9714 Debug --- NLog configuration dump ---
+2022-07-11 22:50:07.9714 Debug Targets:
+2022-07-11 22:50:07.9714 Debug FileTarget(Name=logfile)
+2022-07-11 22:50:07.9722 Debug Rules:
+2022-07-11 22:50:07.9722 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 22:50:07.9732 Debug --- End of NLog configuration dump ---
+2022-07-11 22:50:07.9752 Trace FindReachableObject<System.Object>:
+2022-07-11 22:50:07.9755 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 22:50:07.9755 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 22:50:07.9770 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:50:07.9779 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:50:07.9779 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:07.9785 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:07.9785 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:50:07.9785 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:50:07.9785 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 22:50:07.9793 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:07.9793 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:50:07.9793 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:50:07.9793 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 22:50:07.9793 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 22:50:07.9811 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 22:50:07.9821 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 22:50:07.9843 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 22:50:07.9843 Trace Initializing Layout Renderer: ${message}
+2022-07-11 22:50:07.9862 Trace Initializing ${message}
+2022-07-11 22:50:07.9877 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:50:07.9877 Trace Scanning SimpleLayout '${message}'
+2022-07-11 22:50:07.9884 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:07.9884 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:50:07.9896 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 22:50:07.9896 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:50:07.9902 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:50:07.9902 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:07.9902 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:07.9902 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:50:07.9902 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 22:50:07.9918 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 22:50:07.9918 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:50:07.9938 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:50:07.9938 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:07.9943 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:50:07.9943 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 22:50:07.9943 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:50:07.9952 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 22:50:07.9952 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 22:50:36.9623 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 22:50:36.9655 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 22:50:36.9679 Debug Closing logging configuration...
+2022-07-11 22:50:36.9679 Trace Closing FileTarget(Name=logfile)
+2022-07-11 22:50:36.9691 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 22:50:36.9711 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 22:50:36.9711 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:50:36.9711 Trace Closing Layout Renderer: ${literal}
+2022-07-11 22:50:36.9721 Trace Closing ${message}
+2022-07-11 22:50:36.9721 Trace Closing Layout Renderer: ${message}
+2022-07-11 22:50:36.9732 Debug Finished closing logging configuration.
+2022-07-11 22:50:36.9732 Info LogFactory has been closed.
+2022-07-11 22:50:40.0735 Info Message Template Auto Format enabled
+2022-07-11 22:50:40.1067 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 22:50:40.1314 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 22:50:40.1331 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:40.1346 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 22:50:40.1361 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:50:40.1371 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:50:40.1379 Info Adding target FileTarget(Name=logfile)
+2022-07-11 22:50:40.1379 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 22:50:40.1379 Trace ParseRulesElement
+2022-07-11 22:50:40.1877 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 22:50:40.1882 Debug --- NLog configuration dump ---
+2022-07-11 22:50:40.1882 Debug Targets:
+2022-07-11 22:50:40.1893 Debug FileTarget(Name=logfile)
+2022-07-11 22:50:40.1893 Debug Rules:
+2022-07-11 22:50:40.1899 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 22:50:40.1899 Debug --- End of NLog configuration dump ---
+2022-07-11 22:50:40.1899 Trace FindReachableObject<System.Object>:
+2022-07-11 22:50:40.1910 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 22:50:40.1910 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 22:50:40.1920 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:50:40.1920 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:50:40.1920 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:40.1920 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:40.1929 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:50:40.1929 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:50:40.1929 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 22:50:40.1929 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:40.1929 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:50:40.1929 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:50:40.1940 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 22:50:40.1940 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 22:50:40.1952 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 22:50:40.1959 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 22:50:40.1975 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 22:50:40.1975 Trace Initializing Layout Renderer: ${message}
+2022-07-11 22:50:40.1982 Trace Initializing ${message}
+2022-07-11 22:50:40.1992 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:50:40.1992 Trace Scanning SimpleLayout '${message}'
+2022-07-11 22:50:40.1992 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:40.1999 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:50:40.1999 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 22:50:40.2009 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:50:40.2009 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:50:40.2020 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:40.2020 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:50:40.2029 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:50:40.2029 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 22:50:40.2043 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 22:50:40.2043 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:50:40.2050 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:50:40.2050 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:50:40.2050 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:50:40.2050 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 22:50:40.2061 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:50:40.2061 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 22:50:40.2069 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 22:55:08.8613 Info Message Template Auto Format enabled
+2022-07-11 22:55:08.8941 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 22:55:08.9147 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 22:55:08.9167 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:55:08.9193 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 22:55:08.9226 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:55:08.9241 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:55:08.9253 Info Adding target FileTarget(Name=logfile)
+2022-07-11 22:55:08.9253 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 22:55:08.9265 Trace ParseRulesElement
+2022-07-11 22:55:09.0011 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 22:55:09.0025 Debug --- NLog configuration dump ---
+2022-07-11 22:55:09.0025 Debug Targets:
+2022-07-11 22:55:09.0034 Debug FileTarget(Name=logfile)
+2022-07-11 22:55:09.0034 Debug Rules:
+2022-07-11 22:55:09.0046 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 22:55:09.0051 Debug --- End of NLog configuration dump ---
+2022-07-11 22:55:09.0070 Trace FindReachableObject<System.Object>:
+2022-07-11 22:55:09.0080 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 22:55:09.0088 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 22:55:09.0097 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:55:09.0101 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:55:09.0101 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:55:09.0101 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:55:09.0101 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:55:09.0101 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:55:09.0111 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 22:55:09.0111 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:55:09.0111 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:55:09.0111 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:55:09.0111 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 22:55:09.0125 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 22:55:09.0134 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 22:55:09.0143 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 22:55:09.0161 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 22:55:09.0161 Trace Initializing Layout Renderer: ${message}
+2022-07-11 22:55:09.0161 Trace Initializing ${message}
+2022-07-11 22:55:09.0179 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:55:09.0181 Trace Scanning SimpleLayout '${message}'
+2022-07-11 22:55:09.0181 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:55:09.0181 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 22:55:09.0193 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 22:55:09.0193 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 22:55:09.0193 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 22:55:09.0193 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:55:09.0193 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 22:55:09.0201 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 22:55:09.0201 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 22:55:09.0201 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 22:55:09.0212 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 22:55:09.0212 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 22:55:09.0212 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 22:55:09.0212 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 22:55:09.0212 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 22:55:09.0221 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 22:55:09.0221 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 22:55:09.0232 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 23:02:45.4023 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 23:02:45.4049 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 23:02:45.4067 Debug Closing logging configuration...
+2022-07-11 23:02:45.4067 Trace Closing FileTarget(Name=logfile)
+2022-07-11 23:02:45.4075 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 23:02:45.4090 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 23:02:45.4093 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:02:45.4093 Trace Closing Layout Renderer: ${literal}
+2022-07-11 23:02:45.4093 Trace Closing ${message}
+2022-07-11 23:02:45.4093 Trace Closing Layout Renderer: ${message}
+2022-07-11 23:02:45.4105 Debug Finished closing logging configuration.
+2022-07-11 23:02:45.4105 Info LogFactory has been closed.
+2022-07-11 23:04:34.7263 Info Message Template Auto Format enabled
+2022-07-11 23:04:34.7550 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 23:04:34.7725 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 23:04:34.7740 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:04:34.7761 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 23:04:34.7786 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:04:34.7804 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:04:34.7818 Info Adding target FileTarget(Name=logfile)
+2022-07-11 23:04:34.7826 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 23:04:34.7846 Trace ParseRulesElement
+2022-07-11 23:04:34.8407 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 23:04:34.8416 Debug --- NLog configuration dump ---
+2022-07-11 23:04:34.8416 Debug Targets:
+2022-07-11 23:04:34.8425 Debug FileTarget(Name=logfile)
+2022-07-11 23:04:34.8425 Debug Rules:
+2022-07-11 23:04:34.8439 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 23:04:34.8443 Debug --- End of NLog configuration dump ---
+2022-07-11 23:04:34.8469 Trace FindReachableObject<System.Object>:
+2022-07-11 23:04:34.8474 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 23:04:34.8474 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 23:04:34.8487 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:04:34.8487 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:04:34.8491 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:04:34.8491 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:04:34.8491 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:04:34.8491 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:04:34.8491 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 23:04:34.8502 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:04:34.8502 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:04:34.8518 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:04:34.8527 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 23:04:34.8527 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 23:04:34.8538 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 23:04:34.8546 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 23:04:34.8565 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 23:04:34.8565 Trace Initializing Layout Renderer: ${message}
+2022-07-11 23:04:34.8572 Trace Initializing ${message}
+2022-07-11 23:04:34.8588 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:04:34.8593 Trace Scanning SimpleLayout '${message}'
+2022-07-11 23:04:34.8593 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:04:34.8593 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:04:34.8606 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 23:04:34.8606 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:04:34.8606 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:04:34.8606 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:04:34.8612 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:04:34.8612 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:04:34.8612 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 23:04:34.8624 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 23:04:34.8624 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:04:34.8624 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:04:34.8624 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:04:34.8624 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:04:34.8632 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 23:04:34.8632 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:04:34.8632 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 23:04:34.8649 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 23:09:26.1149 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 23:09:26.1167 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 23:09:26.1184 Debug Closing logging configuration...
+2022-07-11 23:09:26.1184 Trace Closing FileTarget(Name=logfile)
+2022-07-11 23:09:26.1192 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 23:09:26.1203 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 23:09:26.1203 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:09:26.1203 Trace Closing Layout Renderer: ${literal}
+2022-07-11 23:09:26.1203 Trace Closing ${message}
+2022-07-11 23:09:26.1211 Trace Closing Layout Renderer: ${message}
+2022-07-11 23:09:26.1211 Debug Finished closing logging configuration.
+2022-07-11 23:09:26.1211 Info LogFactory has been closed.
+2022-07-11 23:09:35.3268 Info Message Template Auto Format enabled
+2022-07-11 23:09:35.3582 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 23:09:35.3755 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 23:09:35.3778 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:09:35.3820 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 23:09:35.3849 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:09:35.3865 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:09:35.3875 Info Adding target FileTarget(Name=logfile)
+2022-07-11 23:09:35.3875 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 23:09:35.3884 Trace ParseRulesElement
+2022-07-11 23:09:35.4441 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 23:09:35.4452 Debug --- NLog configuration dump ---
+2022-07-11 23:09:35.4458 Debug Targets:
+2022-07-11 23:09:35.4458 Debug FileTarget(Name=logfile)
+2022-07-11 23:09:35.4465 Debug Rules:
+2022-07-11 23:09:35.4474 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 23:09:35.4474 Debug --- End of NLog configuration dump ---
+2022-07-11 23:09:35.4494 Trace FindReachableObject<System.Object>:
+2022-07-11 23:09:35.4494 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 23:09:35.4494 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 23:09:35.4512 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:09:35.4515 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:09:35.4515 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:09:35.4515 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:09:35.4515 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:09:35.4515 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:09:35.4525 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 23:09:35.4525 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:09:35.4525 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:09:35.4525 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:09:35.4534 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 23:09:35.4534 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 23:09:35.4545 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 23:09:35.4545 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 23:09:35.4575 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 23:09:35.4575 Trace Initializing Layout Renderer: ${message}
+2022-07-11 23:09:35.4575 Trace Initializing ${message}
+2022-07-11 23:09:35.4600 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:09:35.4606 Trace Scanning SimpleLayout '${message}'
+2022-07-11 23:09:35.4606 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:09:35.4606 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:09:35.4624 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 23:09:35.4624 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:09:35.4624 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:09:35.4624 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:09:35.4624 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:09:35.4634 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:09:35.4634 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 23:09:35.4646 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 23:09:35.4646 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:09:35.4646 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:09:35.4646 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:09:35.4646 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:09:35.4655 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 23:09:35.4655 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:09:35.4655 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 23:09:35.4667 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 23:09:44.5339 Debug Targets configured when LogLevel >= Debug for Logger: LoggerService.LoggerManager
+2022-07-11 23:09:44.5343 Debug Logger LoggerService.LoggerManager [Debug] => logfile
+2022-07-11 23:09:44.5343 Debug Logger LoggerService.LoggerManager [Info] => logfile
+2022-07-11 23:09:44.5343 Debug Logger LoggerService.LoggerManager [Warn] => logfile
+2022-07-11 23:09:44.5343 Debug Logger LoggerService.LoggerManager [Error] => logfile
+2022-07-11 23:09:44.5353 Debug Logger LoggerService.LoggerManager [Fatal] => logfile
+2022-07-11 23:09:44.5413 Debug FileTarget(Name=logfile): Preparing for new file '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:09:44.5436 Debug FileTarget(Name=logfile): Creating file appender: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:09:44.5444 Trace FileTarget(Name=logfile): Opening /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt with allowFileSharedWriting=False
+2022-07-11 23:10:38.6341 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 23:10:38.6358 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 23:10:38.6368 Debug Targets not configured for Logger: LoggerService.LoggerManager
+2022-07-11 23:10:38.6368 Debug Closing logging configuration...
+2022-07-11 23:10:38.6377 Trace Closing FileTarget(Name=logfile)
+2022-07-11 23:10:38.6391 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 23:10:38.6404 Trace FileTarget(Name=logfile): FinalizeFile '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt, isArchiving: False'
+2022-07-11 23:10:38.6413 Debug FileTarget(Name=logfile): FileAppender Closing Invalidate - /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:10:38.6416 Trace FileTarget: Closing '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:10:38.6426 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 23:10:38.6426 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:10:38.6426 Trace Closing Layout Renderer: ${literal}
+2022-07-11 23:10:38.6426 Trace Closing ${message}
+2022-07-11 23:10:38.6426 Trace Closing Layout Renderer: ${message}
+2022-07-11 23:10:38.6426 Debug Finished closing logging configuration.
+2022-07-11 23:10:38.6437 Info LogFactory has been closed.
+2022-07-11 23:10:46.2885 Info Message Template Auto Format enabled
+2022-07-11 23:10:46.3190 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 23:10:46.3384 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 23:10:46.3403 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:10:46.3426 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 23:10:46.3454 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:10:46.3468 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:10:46.3482 Info Adding target FileTarget(Name=logfile)
+2022-07-11 23:10:46.3489 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 23:10:46.3499 Trace ParseRulesElement
+2022-07-11 23:10:46.4036 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 23:10:46.4046 Debug --- NLog configuration dump ---
+2022-07-11 23:10:46.4050 Debug Targets:
+2022-07-11 23:10:46.4050 Debug FileTarget(Name=logfile)
+2022-07-11 23:10:46.4057 Debug Rules:
+2022-07-11 23:10:46.4073 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 23:10:46.4073 Debug --- End of NLog configuration dump ---
+2022-07-11 23:10:46.4096 Trace FindReachableObject<System.Object>:
+2022-07-11 23:10:46.4100 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 23:10:46.4100 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 23:10:46.4114 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:10:46.4118 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:10:46.4118 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:10:46.4118 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:10:46.4118 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:10:46.4127 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:10:46.4127 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 23:10:46.4127 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:10:46.4127 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:10:46.4138 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:10:46.4138 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 23:10:46.4138 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 23:10:46.4153 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 23:10:46.4162 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 23:10:46.4183 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 23:10:46.4183 Trace Initializing Layout Renderer: ${message}
+2022-07-11 23:10:46.4189 Trace Initializing ${message}
+2022-07-11 23:10:46.4203 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:10:46.4203 Trace Scanning SimpleLayout '${message}'
+2022-07-11 23:10:46.4203 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:10:46.4208 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:10:46.4223 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 23:10:46.4223 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:10:46.4227 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:10:46.4227 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:10:46.4227 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:10:46.4227 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:10:46.4236 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 23:10:46.4236 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 23:10:46.4248 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:10:46.4248 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:10:46.4248 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:10:46.4248 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:10:46.4248 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 23:10:46.4248 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:10:46.4257 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 23:10:46.4257 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 23:11:22.8776 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 23:11:22.8803 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 23:11:22.8823 Debug Closing logging configuration...
+2022-07-11 23:11:22.8823 Trace Closing FileTarget(Name=logfile)
+2022-07-11 23:11:22.8830 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 23:11:22.8845 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 23:11:22.8845 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:11:22.8851 Trace Closing Layout Renderer: ${literal}
+2022-07-11 23:11:22.8851 Trace Closing ${message}
+2022-07-11 23:11:22.8851 Trace Closing Layout Renderer: ${message}
+2022-07-11 23:11:22.8851 Debug Finished closing logging configuration.
+2022-07-11 23:11:22.8859 Info LogFactory has been closed.
+2022-07-11 23:11:23.6664 Info Message Template Auto Format enabled
+2022-07-11 23:11:23.6927 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-07-11 23:11:23.7096 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-07-11 23:11:23.7112 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:11:23.7133 Debug Setting 'NLog.Targets.FileTarget.layout' to '${message}'
+2022-07-11 23:11:23.7157 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:11:23.7169 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:11:23.7179 Info Adding target FileTarget(Name=logfile)
+2022-07-11 23:11:23.7179 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-07-11 23:11:23.7179 Trace ParseRulesElement
+2022-07-11 23:11:23.7693 Debug Watching file-filter 'nlog.config' in directory: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api
+2022-07-11 23:11:23.7702 Debug --- NLog configuration dump ---
+2022-07-11 23:11:23.7702 Debug Targets:
+2022-07-11 23:11:23.7702 Debug FileTarget(Name=logfile)
+2022-07-11 23:11:23.7710 Debug Rules:
+2022-07-11 23:11:23.7720 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-07-11 23:11:23.7720 Debug --- End of NLog configuration dump ---
+2022-07-11 23:11:23.7740 Trace FindReachableObject<System.Object>:
+2022-07-11 23:11:23.7755 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-07-11 23:11:23.7760 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-07-11 23:11:23.7769 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:11:23.7769 Trace   Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:11:23.7769 Trace   Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:11:23.7769 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:11:23.7784 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:11:23.7784 Trace   Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:11:23.7789 Trace   Scanning SimpleLayout '${message}'
+2022-07-11 23:11:23.7789 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:11:23.7789 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:11:23.7789 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:11:23.7807 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-07-11 23:11:23.7810 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-07-11 23:11:23.7824 Info Validating config: TargetNames=logfile, ConfigItems=6, FilePath=/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/nlog.config
+2022-07-11 23:11:23.7834 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-07-11 23:11:23.7853 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-07-11 23:11:23.7853 Trace Initializing Layout Renderer: ${message}
+2022-07-11 23:11:23.7853 Trace Initializing ${message}
+2022-07-11 23:11:23.7871 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:11:23.7871 Trace Scanning SimpleLayout '${message}'
+2022-07-11 23:11:23.7871 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:11:23.7871 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-07-11 23:11:23.7884 Trace Initializing Layout Renderer: ${literal}
+2022-07-11 23:11:23.7884 Trace Initializing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:11:23.7890 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-07-11 23:11:23.7890 Trace Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:11:23.7890 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-07-11 23:11:23.7890 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-07-11 23:11:23.7890 Trace Initializing FileTarget(Name=logfile)
+2022-07-11 23:11:23.7904 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-07-11 23:11:23.7904 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-07-11 23:11:23.7911 Trace  Scanning Property FileName '.logs_allCreatedDotPseudogitLocations.txt' NLog.Layouts
+2022-07-11 23:11:23.7911 Trace  Scanning SimpleLayout '.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:11:23.7911 Trace  Scanning Property Layout '${message}' NLog.Layouts
+2022-07-11 23:11:23.7911 Trace  Scanning SimpleLayout '${message}'
+2022-07-11 23:11:23.7911 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-07-11 23:11:23.7919 Trace FileTarget(Name=logfile) has 2 layouts
+2022-07-11 23:11:23.7919 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-07-11 23:11:43.2735 Debug Targets configured when LogLevel >= Debug for Logger: LoggerService.LoggerManager
+2022-07-11 23:11:43.2735 Debug Logger LoggerService.LoggerManager [Debug] => logfile
+2022-07-11 23:11:43.2741 Debug Logger LoggerService.LoggerManager [Info] => logfile
+2022-07-11 23:11:43.2758 Debug Logger LoggerService.LoggerManager [Warn] => logfile
+2022-07-11 23:11:43.2760 Debug Logger LoggerService.LoggerManager [Error] => logfile
+2022-07-11 23:11:43.2760 Debug Logger LoggerService.LoggerManager [Fatal] => logfile
+2022-07-11 23:11:43.2820 Debug FileTarget(Name=logfile): Preparing for new file '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:11:43.2843 Debug FileTarget(Name=logfile): Creating file appender: /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:11:43.2852 Trace FileTarget(Name=logfile): Opening /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt with allowFileSharedWriting=False
+2022-07-11 23:18:32.5595 Info AppDomain Shutting down. LogFactory closing...
+2022-07-11 23:18:32.5626 Debug Stopping file watching for path '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api' filter 'nlog.config'
+2022-07-11 23:18:32.5641 Debug Targets not configured for Logger: LoggerService.LoggerManager
+2022-07-11 23:18:32.5641 Debug Closing logging configuration...
+2022-07-11 23:18:32.5653 Trace Closing FileTarget(Name=logfile)
+2022-07-11 23:18:32.5653 Debug FileTarget(Name=logfile): Closing...
+2022-07-11 23:18:32.5674 Trace FileTarget(Name=logfile): FinalizeFile '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt, isArchiving: False'
+2022-07-11 23:18:32.5686 Debug FileTarget(Name=logfile): FileAppender Closing Invalidate - /Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:18:32.5691 Trace FileTarget: Closing '/Users/rob/Documents/Code/Personal/CheckMyDirs/CheckMyDirs.Api/bin/Debug/net6.0/.logs_allCreatedDotPseudogitLocations.txt'
+2022-07-11 23:18:32.5705 Debug FileTarget(Name=logfile): Closed.
+2022-07-11 23:18:32.5705 Trace Closing .logs_allCreatedDotPseudogitLocations.txt
+2022-07-11 23:18:32.5711 Trace Closing Layout Renderer: ${literal}
+2022-07-11 23:18:32.5711 Trace Closing ${message}
+2022-07-11 23:18:32.5711 Trace Closing Layout Renderer: ${message}
+2022-07-11 23:18:32.5711 Debug Finished closing logging configuration.
+2022-07-11 23:18:32.5711 Info LogFactory has been closed.

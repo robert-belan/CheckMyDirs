@@ -1,0 +1,38 @@
+@using CheckMyDirs.Common.Models
+
+<article class="article-center">
+    
+    @if (Report is not null)
+    {
+        @if (Report.Error is not null)
+        {
+            <strong class="report-title error">Error</strong>
+            <div class="report-message">@Report.Error</div>
+        }
+        else
+        {
+            <strong class="report-title details">Details</strong>
+            <div class="report-message">@Report.Message</div>
+
+            <br/>
+
+            @* @if (Report.Records.Count != 0) *@
+            @* { *@
+            @*     <strong class="report-title changes">Changes</strong> *@
+            @* } *@
+            
+            <table class="records-table">
+                @foreach (var report in Report.Records)
+                {
+                    <tr>@report</tr>
+                }
+            </table>
+        }
+    }
+    
+</article>
+
+@code {
+    [Parameter]
+    public FinalReportType Report { get; set; }
+}

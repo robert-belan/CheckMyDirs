@@ -1,0 +1,33 @@
+.article-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.report-title {
+}
+
+.report-message {
+}
+
+.error {
+    color: #BA574E;
+}
+
+.details {
+    color: #6388d5;
+}
+
+.changes {
+    color: #6388d5;
+}
+
+.records-table {
+    margin-top: 2rem;
+}
+
+/*.records-table > tr:nth-child(odd) {*/
+/*    background: #292929;*/
+/*}*/
+
+/*tr:nth-child(odd) {background: #FFF}*/

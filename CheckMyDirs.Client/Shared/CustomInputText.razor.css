@@ -1,0 +1,21 @@
+.customTextArea {
+    width: 100vw;
+    text-align: center;
+    background-color: #3B3B3B;
+    color: gold;
+    height: 3rem;
+    border: none;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+.customTextArea:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*Remove colored border when unfocus text area*/
+.valid.modified:not([type=checkbox]) {
+    outline: none;
+}

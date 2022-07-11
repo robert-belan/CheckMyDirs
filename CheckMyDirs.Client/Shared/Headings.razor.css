@@ -1,0 +1,8 @@
+.headings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+}

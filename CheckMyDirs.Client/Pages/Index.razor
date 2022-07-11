@@ -1,0 +1,44 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components
+@using CheckMyDirs.Common.Models
+@using System.Text.Json
+@using System.Text
+@inject HttpClient Http
+
+
+<PageTitle>CheckMyDir app</PageTitle>
+
+<Headings />
+
+<EditForm Model="@_requestDataDto" OnValidSubmit="@HandleValidSubmit">
+    <CustomInputText id="name" @bind-Value="@_requestDataDto.Path" />
+    <button class="invisible nano-btn" type="submit">Submit</button>
+</EditForm>
+
+<ResultArea Report="@_report"/>
+
+
+
+@code
+{
+    private RequestDataDto _requestDataDto = new();
+    private FinalReportType? _report;
+
+    private async Task HandleValidSubmit()
+    {
+        // if path is empty
+        if (string.IsNullOrWhiteSpace(_requestDataDto.Path)) return;
+        
+        var dataDto = JsonSerializer.Serialize(_requestDataDto);
+        var requestContent = new StringContent(dataDto, Encoding.UTF8, "application/json");
+        
+        var response = await Http.PostAsync("https://localhost:5001/", requestContent);
+        
+        response.EnsureSuccessStatusCode(); // TODO: Handle exception
+
+        _report = await response.Content.ReadFromJsonAsync<FinalReportType>(
+            new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+
+        StateHasChanged(); 
+    }
+}

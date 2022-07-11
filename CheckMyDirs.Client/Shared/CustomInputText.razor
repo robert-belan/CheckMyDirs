@@ -1,0 +1,7 @@
+@inherits InputText
+
+<input @attributes="AdditionalAttributes" 
+       class="@CssClass customTextArea" 
+       @bind="CurrentValueAsString" 
+       @bind:event="oninput"
+       placeholder="Enter path"/>
