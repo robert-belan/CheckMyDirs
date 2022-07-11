@@ -21,8 +21,7 @@ public static class StartupServices
                     .AllowAnyMethod()));
     }
     
-    public static void ConfigureExceptionHandler(this WebApplication app
-        /*, ILoggerManager logger*/)
+    public static void ConfigureExceptionHandler(this WebApplication app)
     {
         app.UseExceptionHandler(appError =>
         {
@@ -40,8 +39,6 @@ public static class StartupServices
                         _ => StatusCodes.Status200OK
                     };
                     
-                    //TODO: // logger.LogError($"Something went wrong: {contextFeature.Error}");
-
                     // send report about error
                     await httpContext.Response.WriteAsJsonAsync(new FinalReportType()
                     {   

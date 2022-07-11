@@ -66,7 +66,7 @@ public class PathValidationHandler
 
         if (input.Equals("/"))
         {
-            throw new InvalidPathException("You can't initialize file state history recording of filesystem root.");
+            throw new InvalidPathException("You shouldn't version root directory. It could disrupt the Universe harmony. I'm stopping you.");
         }
 
         if (input.EndsWith($"..{_separator}"))

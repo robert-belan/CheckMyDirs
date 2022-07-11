@@ -1,11 +1,3 @@
-// TODO: Handle long long report responding.
-
-// TODO: Change .pseudogit file location to the same as investigated folder and exclude .pseudogit !!
-
-// TODO: Check if path is too long
-// TODO: Check if path is valid 
-
-
 using CheckMyDirs.Api.IoC;
 using NLog;
 
