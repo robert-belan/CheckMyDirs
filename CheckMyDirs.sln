@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMyDirs", "CheckMyDirs\CheckMyDirs.csproj", "{146806B7-8ADD-4F5A-8839-8ED1BC243FE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMyDirs.Api", "CheckMyDirs.Api\CheckMyDirs.Api.csproj", "{146806B7-8ADD-4F5A-8839-8ED1BC243FE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMyDirs.Client", "CheckMyDirs.Client\CheckMyDirs.Client.csproj", "{955A5F5F-8ABE-42F3-B454-E0B497563C75}"
 EndProject
