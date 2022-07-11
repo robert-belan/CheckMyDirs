@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMyDirs", "CheckMyDirs\CheckMyDirs.csproj", "{146806B7-8ADD-4F5A-8839-8ED1BC243FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMyDirs.Client", "CheckMyDirs.Client\CheckMyDirs.Client.csproj", "{955A5F5F-8ABE-42F3-B454-E0B497563C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMyDirs.Common", "CheckMyDirs.Common\CheckMyDirs.Common.csproj", "{F63D4032-841B-42B1-89FA-D3F2FA2BF3E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{146806B7-8ADD-4F5A-8839-8ED1BC243FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146806B7-8ADD-4F5A-8839-8ED1BC243FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146806B7-8ADD-4F5A-8839-8ED1BC243FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146806B7-8ADD-4F5A-8839-8ED1BC243FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955A5F5F-8ABE-42F3-B454-E0B497563C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955A5F5F-8ABE-42F3-B454-E0B497563C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955A5F5F-8ABE-42F3-B454-E0B497563C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955A5F5F-8ABE-42F3-B454-E0B497563C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F63D4032-841B-42B1-89FA-D3F2FA2BF3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63D4032-841B-42B1-89FA-D3F2FA2BF3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63D4032-841B-42B1-89FA-D3F2FA2BF3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63D4032-841B-42B1-89FA-D3F2FA2BF3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
