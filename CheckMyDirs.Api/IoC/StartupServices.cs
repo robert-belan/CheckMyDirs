@@ -56,6 +56,7 @@ public static class StartupServices
     {
         services.AddSingleton<PathValidationHandler>();
         services.AddSingleton<PreviousFilesStatesHandler>();
+        services.AddSingleton<CleaningMessHandler>();
         
         services.AddTransient<ProcessingHandler>();
         services.AddTransient<CurrentFilesStatesHandler>();

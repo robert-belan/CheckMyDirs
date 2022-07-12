@@ -27,4 +27,21 @@ public static class PathHelpers
         // Newly ".pseudogit" resides in folder being checked
         return Path.Combine(path, ExtensionTypes.DotPseudogit);
     }
+
+    public static async Task<List<string>> GetDotPseudogitFilesLogs()
+    {
+        var dotPseudogitFilesLog = GetDotPseudogitFileLogPath();
+        var locations = await File.ReadAllLinesAsync(dotPseudogitFilesLog);
+        
+        return locations.ToList();
+    }
+
+    public static string GetDotPseudogitFileLogPath()
+    {
+        var location = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.Desktop), 
+            LogLocationsTypes.DotPseudogitFilesLocationsLog);
+
+        return location;
+    }
 }
