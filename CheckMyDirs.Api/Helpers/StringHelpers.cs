@@ -6,9 +6,9 @@ namespace CheckMyDirs.Api.Helpers;
 
 public static class StringHelpers
 {
-    public static string GetModified(string path, IBaseFileState fileState)
+    public static string GetModified(string path, IBaseFileState fileState, int? previousVersion)
     {
-        return GetStateRecord(path, fileState, ReportStatusTypes.Modified);
+        return GetStateRecord(path, fileState, ReportStatusTypes.Modified, previousVersion);
     }
 
     public static string GetAdded(string path, IBaseFileState fileState)
@@ -23,15 +23,22 @@ public static class StringHelpers
     
     private static string GetStateRecord(string path, 
         IBaseFileState fileState,
-        string specificState)
+        string specificState,
+        int? previousVersion = null)
     {
         var substringToBeReplacedBy = $"{path}{Path.DirectorySeparatorChar}";
         
         var stateRecord = new StringBuilder()
             .Append(specificState + " ")
-            .Append(fileState.FullName.Replace(substringToBeReplacedBy, string.Empty))
-            .ToString();
+            .Append(fileState.FullName.Replace(substringToBeReplacedBy, string.Empty));
+
+        if (specificState.Equals(ReportStatusTypes.Modified))
+        {
+            stateRecord.Append(" (in version ")
+            .Append(previousVersion)
+            .Append(')');
+        }
         
-        return stateRecord;
+        return stateRecord.ToString();
     }
 }

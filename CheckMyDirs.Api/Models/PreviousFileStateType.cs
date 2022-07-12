@@ -6,5 +6,5 @@ public class PreviousFileStateType : IBaseFileState
 {
     public string FullName { get; set; } = string.Empty;
     public string Checksum { get; set; } = string.Empty;
-    public int Version { get; set; }
+    public int? Version { get; set; }
 }

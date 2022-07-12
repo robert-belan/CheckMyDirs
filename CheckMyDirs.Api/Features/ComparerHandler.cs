@@ -90,7 +90,7 @@ public class ComparerHandler
                     // If checksums NOT EQUAL (== file was MODIFIED)
                     if (previousFileState.Checksum != currentFileState.Checksum)
                     {
-                        var stateRecord = StringHelpers.GetModified(path, currentFileState);
+                        var stateRecord = StringHelpers.GetModified(path, currentFileState, previousFileState.Version);
                         _reportRecords.Add(stateRecord);
                         
                         // Update file state
