@@ -47,6 +47,10 @@ V programu jsou naimplementováný dva doplňující endpointy:
 
 K těmto endpointům nejsou v klientovi zatím naimplementovány žádné "čudlíky" a je nutné vyslat požadavek manuálně (browser, Postman, curl...)
 
+
+## Použití
+Doporučuji skenovat adresář dle **absolutní cesty** k souboru. Validace cesty pro Windows platformy není zatím naimplementována, pouze Unix-like systémy. 
+
 ## Podrobněji
 Program je rozdělen na serverovou a klientskou část, kdy veškerá logika se zpracovává na serverové straně. Obě části mezi sebou komunikují prostřednictím
 http.
@@ -71,3 +75,4 @@ Pro tyto účely zcela dostačující.
   
 ## Možná omezení a nedostatky
 - testováno zatím pouze na MacOS
+- logika validace cesty by měla být propracovanější, ale pro účely ukázky práce je tato, domnívám se, dostačující
