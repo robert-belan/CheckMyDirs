@@ -62,8 +62,7 @@ Pro tyto účely zcela dostačující.
 ## Potřebné úpravy
 
 #### Nezbytné
-- Doplnit zobrazení kolikrát došlo ke změně souborů (tz. verze souborů)
-  - Verze se **zaznamenávají** a **aktualizují**. Chybí "pouze" jejich zobrazení v klientovi.
+
 
 #### Vhodné
 - Dolnit validaci cesty k souboru na Windows platformách - validace na Unix-like systémech je naimplementována
