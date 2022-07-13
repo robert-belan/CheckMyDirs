@@ -24,6 +24,16 @@ public sealed class CurrentFilesStatesHandler
     private void PopulateFiles()
     {
         _files = new DirectoryInfo(_path).GetFiles("*.*", SearchOption.AllDirectories);
+
+        #region Files Processiong Limitation
+        // Limit functionality due to unimplemented results paging - huge number of files could take serious time
+        // TODO: Delete files processing limitation after paging implementation
+        if (_files.Length > 1000)
+        {
+            throw new InvalidOperationException(
+                "Desired directory contains too many files to process (greater than 1000). Due to unimplemented result paging there is a safety limit.");
+        }
+        #endregion
     }
 
     private void GetFilesChecksums()
@@ -33,7 +43,6 @@ public sealed class CurrentFilesStatesHandler
         foreach (var file in _files!)
         {
             // Get SHA1 checksum value
-            // using var fileStream = file.Open(FileMode.Open);
             using var fileStream = file.OpenRead();
             
             var hash = sha1.ComputeHash(fileStream);
