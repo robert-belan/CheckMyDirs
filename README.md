@@ -69,11 +69,11 @@ Pro tyto účely zcela dostačující.
 - Dolnit validaci cesty k souboru na Windows platformách - validace na Unix-like systémech je naimplementována
 
 #### Bylo by pěkné
-- UX: Implementace "loading" komponenty při odeslání požadavku a čekání na odpověď
-- UX & Performance: Implementace stránkování v klientovi v případě velkého množství změn v adresáři
-- Možnost ignorovat sledování změn některých souborů
-- Doplnit čudlíky na výpis .pseudogit souborů a vyčištění od těchto souborů.
+- [ ] UX: Implementace "loading" komponenty při odeslání požadavku a čekání na odpověď
+- [ ] UX & Performance: Implementace stránkování v klientovi v případě velkého množství změn v adresáři
+- [ ] Možnost ignorovat sledování změn některých souborů
+- [ ] Doplnit čudlíky na výpis .pseudogit souborů a vyčištění od těchto souborů.
   
 ## Možná omezení a nedostatky
-- testováno zatím pouze na MacOS
-- logika validace cesty by měla být propracovanější, ale pro účely ukázky práce je tato, domnívám se, dostačující
+- [ ] testováno zatím pouze na MacOS
+- [ ] logika validace cesty by měla být propracovanější, ale pro účely ukázky práce je tato, domnívám se, dostačující
