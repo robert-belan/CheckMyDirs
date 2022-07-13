@@ -39,12 +39,13 @@ _Beze změny:_
 
 
 ## Doplňující funkce
-Testování programu způsobí ukládání `.pseudogit` souborů. Těchto soborů může být více a je zbytečné si jimi zaneřádit systém.
+Testování/spouštění programu způsobí ukládání `.pseudogit` souborů. Těchto soborů může být více a je zbytečné si jimi zaneřádit systém.
 V programu jsou naimplementováný dva doplňující endpointy:
 
 - `/pseudogitfiles` - vrátí seznam všech vytvořených `.pseudogit` souborů
 - `/clean` - všechny doposud vytvořené `.pseudogit`soubory se **odstraní**
 
+Endpointy slouží pouze pro snažší smazání "následků" používání tohoto programu :-)
 K těmto endpointům nejsou v klientovi zatím naimplementovány žádné "čudlíky" a je nutné vyslat požadavek manuálně (browser, Postman, curl...)
 
 
@@ -62,16 +63,15 @@ Pro tyto účely zcela dostačující.
 ## Potřebné úpravy
 
 #### Nezbytné
-- Doplnit zobrazení kolikrát došlo ke změně souborů (tz. verze souborů)
-  - Verze se **zaznamenávají** a **aktualizují**. Chybí "pouze" jejich zobrazení v klientovi.
+
 
 #### Vhodné
 - Dolnit validaci cesty k souboru na Windows platformách - validace na Unix-like systémech je naimplementována
 
 #### Bylo by pěkné
-- UX: Implementace "loading" komponenty při odeslání požadavku a čekání na odpověď
 - UX & Performance: Implementace stránkování v klientovi v případě velkého množství změn v adresáři
 - Možnost ignorovat sledování změn některých souborů
+- Doplnit čudlíky na výpis .pseudogit souborů a vyčištění od těchto souborů.
   
 ## Možná omezení a nedostatky
 - testováno zatím pouze na MacOS
