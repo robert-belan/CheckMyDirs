@@ -53,10 +53,8 @@ public class PathValidationHandler
     {
         // if windows specific path provided
         // Warning: the path validation is more complicated and should be handled
-        //  see: https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file
         
-        // TODO: Incorrect regex - Need to be replaced !!!
-        var windowsPathRegexPattern = "^[A-Za-z]:\\(?:[^\\/:*?\"<>|\r\n]+\\)*[^\\/:*?\"<>|\r\n]*$";
+        var windowsPathRegexPattern = @"^(?!.*[\\\/]\s+)(?!(?:.*\s|.*\.|\W+)$)(?:[a-zA-Z]:)?(?:(?:[^<>:""\|\?\*\n])+(?:\/\/|\/|\\\\|\\)?)+$";
         
         var reg = new Regex(windowsPathRegexPattern, RegexOptions.IgnoreCase);
         if (reg.IsMatch(input))
@@ -69,16 +67,6 @@ public class PathValidationHandler
             throw new InvalidPathException("You shouldn't version root directory. It could disrupt the Universe harmony. I'm stopping you.");
         }
 
-        if (input.EndsWith($"..{_separator}"))
-        {
-            return Directory.GetParent(input).ToString();
-        }
-        
-        if (input.EndsWith($".{_separator}"))
-        {
-            return Directory.GetCurrentDirectory();
-        }
-        
         if (input.EndsWith(_separator) & !input.EndsWith($"{_separator}{_separator}" ))
         {
             input = input.TrimEnd(Path.DirectorySeparatorChar);
@@ -90,7 +78,7 @@ public class PathValidationHandler
         }
     
         // if relative value provided
-        if (!input.StartsWith(_separator) | input.StartsWith("./"))
+        if (!input.StartsWith(_separator) | input.StartsWith($".{_separator}"))
         {
             return Path.Combine(Directory.GetCurrentDirectory(), input);
         }
