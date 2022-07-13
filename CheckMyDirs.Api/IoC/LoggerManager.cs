@@ -2,7 +2,7 @@ using CheckMyDirs.Api.Contracts;
 using NLog;
 using ILogger = NLog.ILogger;
 
-namespace LoggerService;
+namespace CheckMyDirs.Api.IoC;
 
 public class LoggerManager : ILoggerManager
 {

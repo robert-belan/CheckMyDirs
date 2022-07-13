@@ -2,7 +2,6 @@ using CheckMyDirs.Api.Contracts;
 using CheckMyDirs.Api.Exceptions;
 using CheckMyDirs.Api.Features;
 using CheckMyDirs.Common.Models;
-using LoggerService;
 using Microsoft.AspNetCore.Diagnostics;
 
 namespace CheckMyDirs.Api.IoC;

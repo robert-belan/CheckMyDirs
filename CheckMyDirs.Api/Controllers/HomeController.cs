@@ -29,7 +29,7 @@ public class HomeController : Controller
 
     [HttpGet]
     [Route("pseudogitfiles")]
-    public async Task<ActionResult<List<string>>> GetCreatedDotPseudogitFilePaths()
+    public async Task<ActionResult<string[]>> GetCreatedDotPseudogitFilePaths()
     {
         var locations = await PathHelpers.GetDotPseudogitFilesLogs();
         return new OkObjectResult(locations);

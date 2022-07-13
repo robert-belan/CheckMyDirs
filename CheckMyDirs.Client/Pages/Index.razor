@@ -15,17 +15,20 @@
     <button class="invisible nano-btn" type="submit">Submit</button>
 </EditForm>
 
-<ResultArea Report="@_report"/>
+<ResultArea Report="@_report" IsLoading="@IsLoading"/>
 
 @code
 {
     private RequestDataDto _requestDataDto = new();
     private FinalReportType? _report;
+    private bool IsLoading = false;
 
     private async Task HandleValidSubmit()
     {
         // if path is empty
         if (string.IsNullOrWhiteSpace(_requestDataDto.Path)) return;
+
+        IsLoading = true;
         
         var dataDto = JsonSerializer.Serialize(_requestDataDto);
         var requestContent = new StringContent(dataDto, Encoding.UTF8, "application/json");
@@ -37,6 +40,8 @@
         _report = await response.Content.ReadFromJsonAsync<FinalReportType>(
             new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
 
+        IsLoading = false;
+        
         StateHasChanged(); 
     }
 }

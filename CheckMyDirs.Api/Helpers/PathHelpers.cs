@@ -28,12 +28,18 @@ public static class PathHelpers
         return Path.Combine(path, ExtensionTypes.DotPseudogit);
     }
 
-    public static async Task<List<string>> GetDotPseudogitFilesLogs()
+    public static async Task<string[]> GetDotPseudogitFilesLogs()
     {
-        var dotPseudogitFilesLog = GetDotPseudogitFileLogPath();
-        var locations = await File.ReadAllLinesAsync(dotPseudogitFilesLog);
+        var dotPseudogitFilesLogPath = GetDotPseudogitFileLogPath();
+
+        string[] locations = {};
+        if (!string.IsNullOrEmpty(dotPseudogitFilesLogPath))
+        {
+            locations = await File.ReadAllLinesAsync(dotPseudogitFilesLogPath);
+            return locations;
+        }
         
-        return locations.ToList();
+        return locations;
     }
 
     public static string GetDotPseudogitFileLogPath()
@@ -42,6 +48,6 @@ public static class PathHelpers
             Environment.GetFolderPath(Environment.SpecialFolder.Desktop), 
             LogLocationsTypes.DotPseudogitFilesLocationsLog);
 
-        return location;
+        return !File.Exists(location) ? string.Empty : location;
     }
 }

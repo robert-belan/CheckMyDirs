@@ -6,11 +6,11 @@ namespace CheckMyDirs.Api.Features;
 public class PathValidationHandler
 {
     private readonly PlatformID _currentPlatform = Environment.OSVersion.Platform;
-    static readonly string _separator = Path.DirectorySeparatorChar.ToString();
+    private readonly string _separator = Path.DirectorySeparatorChar.ToString();
     
-    public string TryGetFullPath(string input)
+    public string TryGetFullPath(string path)
     {
-        if (input.Equals(string.Empty) || input is null)
+        if (path.Equals(string.Empty) || path is null)
         {
             throw new InvalidPathException("Path could not be null or empty.");
         }
@@ -21,14 +21,14 @@ public class PathValidationHandler
         {
             case PlatformID.Unix:
             case PlatformID.MacOSX:
-                validatedPath = GetUnixSpecificPath(input);
+                validatedPath = GetUnixSpecificPath(path);
                 break;
 
             case PlatformID.Win32NT:
             case PlatformID.Win32Windows:
             case PlatformID.Win32S:
             case PlatformID.WinCE:
-                validatedPath = GetWindowsSpecificPath(input);
+                validatedPath = GetWindowsSpecificPath(path);
                 break;
 
             default:
@@ -49,7 +49,7 @@ public class PathValidationHandler
         return validatedPath;
     }
 
-    private static string GetUnixSpecificPath(string input)
+    private string GetUnixSpecificPath(string input)
     {
         // if windows specific path provided
         // Warning: the path validation is more complicated and should be handled
@@ -98,7 +98,7 @@ public class PathValidationHandler
         return input;
     }
     
-    private static string GetWindowsSpecificPath(string input)
+    private string GetWindowsSpecificPath(string input)
     {
         // Warning: the path validation is more complicated and should be handled
         //  see: https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file

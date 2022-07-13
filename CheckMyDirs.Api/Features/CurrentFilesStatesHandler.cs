@@ -33,7 +33,9 @@ public sealed class CurrentFilesStatesHandler
         foreach (var file in _files!)
         {
             // Get SHA1 checksum value
-            using var fileStream = file.Open(FileMode.Open);
+            // using var fileStream = file.Open(FileMode.Open);
+            using var fileStream = file.OpenRead();
+            
             var hash = sha1.ComputeHash(fileStream);
             
             // Ignore ".pseudogit" file

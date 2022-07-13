@@ -12,7 +12,7 @@ public class CleaningMessHandler
     public async Task ExecuteOrder66()
     {
         var locations = await PathHelpers.GetDotPseudogitFilesLogs();
-        
+
         // Delete all .pseudogit files ever created
         foreach (var location in locations)
         {
@@ -21,6 +21,10 @@ public class CleaningMessHandler
 
         // Delete log itself
         var logLocation = PathHelpers.GetDotPseudogitFileLogPath();
-        File.Delete(logLocation);
+        if (!string.IsNullOrEmpty(logLocation))
+        {
+            File.Delete(logLocation);
+        };
+            
     }
 }

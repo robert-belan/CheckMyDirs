@@ -2,31 +2,30 @@
 
 <article class="article-center">
     
-    @if (Report is not null)
+    @if (IsLoading)
     {
-        @if (Report.Error is not null)
-        {
-            <strong class="report-title error">Error</strong>
-            <div class="report-message">@Report.Error</div>
-        }
-        else
+        <p>Loading...</p>
+    }
+    else
+    {
+        @if (Report?.Error is null)
         {
             <strong class="report-title details">Details</strong>
-            <div class="report-message">@Report.Message</div>
+            <div class="report-message">@(Report?.Message ?? string.Empty)</div>
 
             <br/>
 
-            @* @if (Report.Records.Count != 0) *@
-            @* { *@
-            @*     <strong class="report-title changes">Changes</strong> *@
-            @* } *@
-            
             <table class="records-table">
-                @foreach (var report in Report.Records)
+                @foreach (var report in Report?.Records ?? new List<string>())
                 {
                     <tr>@report</tr>
                 }
             </table>
+        }
+        else
+        {
+            <strong class="report-title error">Error</strong>
+            <div class="report-message">@Report.Error</div>
         }
     }
     
@@ -34,5 +33,8 @@
 
 @code {
     [Parameter]
-    public FinalReportType Report { get; set; }
+    public FinalReportType? Report { get; set; }
+    
+    [Parameter]
+    public bool IsLoading { get; set; }
 }
