@@ -6,9 +6,9 @@ namespace CheckMyDirs.Api.Features;
 
 public class CleaningMessHandler
 {
-    /// <summary>
-    /// See https://starwars.fandom.com/wiki/Order_66
-    /// </summary>
+    /// <remarks>
+        /// See https://starwars.fandom.com/wiki/Order_66
+    /// </remarks>
     public async Task ExecuteOrder66()
     {
         var locations = await PathHelpers.GetDotPseudogitFilesLogs();

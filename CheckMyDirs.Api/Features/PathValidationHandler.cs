@@ -6,7 +6,6 @@ namespace CheckMyDirs.Api.Features;
 public class PathValidationHandler
 {
     private readonly PlatformID _currentPlatform = Environment.OSVersion.Platform;
-    private readonly string _separator = Path.DirectorySeparatorChar.ToString();
     
     public string TryGetFullPath(string path)
     {
@@ -48,48 +47,26 @@ public class PathValidationHandler
 
         return validatedPath;
     }
-
-    private string GetUnixSpecificPath(string input)
+    
+    private string GetUnixSpecificPath(string path)
     {
-        // if windows specific path provided
-        // Warning: the path validation is more complicated and should be handled
-        
-        var windowsPathRegexPattern = @"^(?!.*[\\\/]\s+)(?!(?:.*\s|.*\.|\W+)$)(?:[a-zA-Z]:)?(?:(?:[^<>:""\|\?\*\n])+(?:\/\/|\/|\\\\|\\)?)+$";
-        
-        var reg = new Regex(windowsPathRegexPattern, RegexOptions.IgnoreCase);
-        if (reg.IsMatch(input))
-        {
-            throw new InvalidPathException("Using windows specific path on Unix-like system.");
-        }
-
-        if (input.Equals("/"))
+        // if root
+        if (path.Equals("/"))
         {
             throw new InvalidPathException("You shouldn't version root directory. It could disrupt the Universe harmony. I'm stopping you.");
         }
 
-        if (input.EndsWith(_separator) & !input.EndsWith($"{_separator}{_separator}" ))
+        if (path.StartsWith("~/"))
         {
-            input = input.TrimEnd(Path.DirectorySeparatorChar);
+            return path.Replace("~", Environment.GetFolderPath(Environment.SpecialFolder.Personal));
         }
-        
-        if (input.StartsWith("~/"))
-        {
-            return input.Replace("~", Environment.GetFolderPath(Environment.SpecialFolder.Personal));
-        }
-    
-        // if relative value provided
-        if (!input.StartsWith(_separator) | input.StartsWith($".{_separator}"))
-        {
-            return Path.Combine(Directory.GetCurrentDirectory(), input);
-        }
-    
-        return input;
+
+        return path;
     }
     
-    private string GetWindowsSpecificPath(string input)
+    private string GetWindowsSpecificPath(string path)
     {
-        // Warning: the path validation is more complicated and should be handled
-        //  see: https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file
-        return input;
+        // Seems to Windows withstands everything
+        return path;
     }
 }

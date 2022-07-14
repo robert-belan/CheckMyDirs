@@ -3,6 +3,7 @@
 @using CheckMyDirs.Common.Models
 @using System.Text.Json
 @using System.Text
+@using System.Net
 @inject HttpClient Http
 
 
@@ -10,34 +11,34 @@
 
 <Headings />
 
-<EditForm Model="@_requestDataDto" OnValidSubmit="@HandleValidSubmit">
-    <CustomInputText id="name" @bind-Value="@_requestDataDto.Path" />
+<EditForm Model="@RequestDataDto" OnValidSubmit="@HandleValidSubmit">
+    <CustomInputText id="name" @bind-Value="@RequestDataDto.Path" />
     <button class="invisible nano-btn" type="submit">Submit</button>
 </EditForm>
 
-<ResultArea Report="@_report" IsLoading="@IsLoading"/>
+<ResultArea Report="@Report" IsLoading="@IsLoading"/>
 
 @code
 {
-    private RequestDataDto _requestDataDto = new();
-    private FinalReportType? _report;
-    private bool IsLoading = false;
-
+    private FinalReportType? Report { get; set; }
+    private RequestDataDto RequestDataDto { get; set; } = new();
+    private bool IsLoading { get; set; } = false;
+    
     private async Task HandleValidSubmit()
     {
         // if path is empty
-        if (string.IsNullOrWhiteSpace(_requestDataDto.Path)) return;
+        if (string.IsNullOrWhiteSpace(RequestDataDto.Path)) return;
 
         IsLoading = true;
         
-        var dataDto = JsonSerializer.Serialize(_requestDataDto);
+        var dataDto = JsonSerializer.Serialize(RequestDataDto);
         var requestContent = new StringContent(dataDto, Encoding.UTF8, "application/json");
         
         var response = await Http.PostAsync("https://localhost:5001/", requestContent);
         
         response.EnsureSuccessStatusCode(); // TODO: Handle exception
 
-        _report = await response.Content.ReadFromJsonAsync<FinalReportType>(
+        Report = await response.Content.ReadFromJsonAsync<FinalReportType>(
             new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
 
         IsLoading = false;
