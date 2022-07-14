@@ -1,4 +1,5 @@
 @using CheckMyDirs.Common.Models
+@using System.Text
 
 <article class="article-center">
     
@@ -8,21 +9,20 @@
     }
     else
     {
-        @if (Report?.Error is null)
+        @if (Report?.Message is not null)
         {
             <strong class="report-title details">Details</strong>
             <div class="report-message">@(Report?.Message ?? string.Empty)</div>
 
             <br/>
 
-            <table class="records-table">
-                @foreach (var report in Report?.Records ?? new List<string>())
-                {
-                    <tr>@report</tr>
-                }
-            </table>
+            <p class="report-text">
+                @TextResult()
+            </p>
+            
+
         }
-        else
+        else if (Report?.Error is not null)
         {
             <strong class="report-title error">Error</strong>
             <div class="report-message">@Report.Error</div>
@@ -32,9 +32,24 @@
 </article>
 
 @code {
+
     [Parameter]
     public FinalReportType? Report { get; set; }
     
     [Parameter]
     public bool IsLoading { get; set; }
+
+    private string TextResult()
+    {
+        var sb = new StringBuilder();
+
+        foreach (var record in Report?.Records ?? new List<string>())
+        {
+            sb.Append(record)
+                .Append('\n');
+        }
+
+        return sb.ToString();
+    }
+    
 }

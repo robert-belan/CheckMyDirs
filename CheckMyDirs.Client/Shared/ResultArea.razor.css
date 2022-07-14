@@ -34,6 +34,13 @@
     
 }
 
+.report-text {
+    white-space: pre-line;
+    width: 100%;
+    line-height: 2rem;
+    overflow-wrap: break-word;
+}
+
 /*.records-table > tr:nth-child(odd) {*/
 /*    background: #292929;*/
 /*}*/

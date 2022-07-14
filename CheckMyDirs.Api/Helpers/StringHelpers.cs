@@ -37,7 +37,7 @@ public static class StringHelpers
 
         var stateRecord = new StringBuilder()
             .Append(specificState)
-            .Append(' ')
+            .Append('\u00A0')
             .Append(fileState.FullName.Replace(substringToBeReplacedBy, string.Empty));
 
         if (specificState.Equals(ReportStatusTypes.Modified))
