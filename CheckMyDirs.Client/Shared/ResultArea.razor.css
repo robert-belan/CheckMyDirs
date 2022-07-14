@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 3rem;
+    padding: 0 2.5rem 0 2.5rem;
 }
 
 .report-title {
@@ -26,6 +27,11 @@
 
 .records-table {
     margin-top: 2rem;
+}
+
+.records-table > tr {
+    overflow-wrap: anywhere
+    
 }
 
 /*.records-table > tr:nth-child(odd) {*/
