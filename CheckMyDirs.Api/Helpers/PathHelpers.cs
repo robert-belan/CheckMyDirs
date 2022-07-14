@@ -21,18 +21,15 @@ public static class PathHelpers
     
     public static string GetDotPseudogit(string path)
     {
-        // Originaly
-        // return Path.Combine(GetParent(path), ExtensionTypes.DotPseudogit);
-
-        // Newly ".pseudogit" resides in folder being checked
+        // ".pseudogit" file resides in folder being checked
         return Path.Combine(path, ExtensionTypes.DotPseudogit);
     }
 
     public static async Task<string[]> GetDotPseudogitFilesLogs()
     {
         var dotPseudogitFilesLogPath = GetDotPseudogitFileLogPath();
-
-        string[] locations = {};
+        string[] locations = Array.Empty<string>();
+        
         if (!string.IsNullOrEmpty(dotPseudogitFilesLogPath))
         {
             locations = await File.ReadAllLinesAsync(dotPseudogitFilesLogPath);

@@ -7,7 +7,7 @@ namespace CheckMyDirs.Api.Features;
 public sealed class CurrentFilesStatesHandler
 {
     private string _path = string.Empty;
-    private FileInfo[]? _files = Array.Empty<FileInfo>();
+    private IEnumerable<FileInfo> _files = Enumerable.Empty<FileInfo>();
     private List<CurrentFileStateType> _filesWithChecksum = new();
     
 
@@ -23,17 +23,7 @@ public sealed class CurrentFilesStatesHandler
     
     private void PopulateFiles()
     {
-        _files = new DirectoryInfo(_path).GetFiles("*.*", SearchOption.AllDirectories);
-
-        #region Files Processiong Limitation
-        // Limit functionality due to unimplemented results paging - huge number of files could take serious time
-        // TODO: Delete files processing limitation after paging implementation
-        if (_files.Length > 1000)
-        {
-            throw new InvalidOperationException(
-                "Desired directory contains too many files to process (greater than 1000). Due to unimplemented result paging there is a safety limit.");
-        }
-        #endregion
+        _files = new DirectoryInfo(_path).EnumerateFiles("*.*", SearchOption.AllDirectories);
     }
 
     private void GetFilesChecksums()

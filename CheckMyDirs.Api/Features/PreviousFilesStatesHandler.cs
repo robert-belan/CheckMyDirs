@@ -10,12 +10,12 @@ namespace CheckMyDirs.Api.Features;
 
 public class PreviousFilesStatesHandler
 {
-    public List<PreviousFileStateType>? TryGetPreviousFilesStates(string path)
+    public List<PreviousFileStateType> TryGetPreviousFilesStates(string path)
     {
         // Check if ".pseudogit" exists
         var dotPseudogit = PathHelpers.GetDotPseudogit(path);
 
-        if (!File.Exists(dotPseudogit)) return null;
+        if (!File.Exists(dotPseudogit)) return new List<PreviousFileStateType>();
         
         // Try get previous states entities from ".pseudogit" file 
         try
@@ -26,7 +26,8 @@ public class PreviousFilesStatesHandler
             var previousFileStates = JsonSerializer
                 .Deserialize<List<PreviousFileStateType>>(dotPseudogitContent);
             
-            return previousFileStates ?? null;
+            // https://www.tabsoverspaces.com/233833-best-way-to-create-an-empty-collection-array-and-list-in-csharp-net
+            return previousFileStates ?? new List<PreviousFileStateType>();
         }
         catch
         {
@@ -35,4 +36,16 @@ public class PreviousFilesStatesHandler
                 "Previous states record file reading or parsing has failed.");
         }
     }
+
+    // private string TryGetDotPseudogitInAncestorsDirs(string dotPseudogitPath)
+    // {
+    //     var parent = Directory.GetParent(dotPseudogitPath);
+    //
+    //     if (File.Exists(dotPseudogitPath))
+    //     {
+    //         return parent.ToString();
+    //     }
+    //     
+    //     // if (Directory.Enu) // TODO: EnumerateFiles
+    // }
 }

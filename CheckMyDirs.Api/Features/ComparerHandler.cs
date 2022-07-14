@@ -25,7 +25,7 @@ public class ComparerHandler
     public async Task<FinalReportType> CompareAndGetFinalReport(
         string path, 
         List<CurrentFileStateType> currentFilesStates,
-        List<PreviousFileStateType>? previousFilesStates) 
+        List<PreviousFileStateType> previousFilesStates) 
     {
         
         // Index current states entities
@@ -34,7 +34,7 @@ public class ComparerHandler
 
         var finalReport = new FinalReportType();
         
-        if (previousFilesStates is null) // == directory not checked previously)
+        if (!previousFilesStates.Any()) // == directory not checked previously
         {
             #region Create NEW .pseudogit file
 
@@ -75,7 +75,7 @@ public class ComparerHandler
             _previousStatesIndex = previousFilesStates
                 .ToDictionary(previousStateEntity => previousStateEntity.FullName);
 
-            if (currentFilesStates.Count == 0) {
+            if (!currentFilesStates.Any()) {
                 finalReport.Message = "Folder is empty.";
             }
             

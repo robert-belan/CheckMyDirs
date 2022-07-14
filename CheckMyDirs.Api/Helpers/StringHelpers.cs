@@ -21,22 +21,30 @@ public static class StringHelpers
         return GetStateRecord(path, fileState, ReportStatusTypes.Deleted);
     }
     
+
+    /// <remarks>
+    ///     This func is used in loop, that's why Stringbuilders everywhere.
+    /// </remarks>
     private static string GetStateRecord(string path, 
         IBaseFileState fileState,
         string specificState,
         int? previousVersion = null)
     {
-        var substringToBeReplacedBy = $"{path}{Path.DirectorySeparatorChar}";
-        
+        var substringToBeReplacedBy = new StringBuilder()
+            .Append(path)
+            .Append(Path.DirectorySeparatorChar)
+            .ToString();
+
         var stateRecord = new StringBuilder()
-            .Append(specificState + " ")
+            .Append(specificState)
+            .Append(' ')
             .Append(fileState.FullName.Replace(substringToBeReplacedBy, string.Empty));
 
         if (specificState.Equals(ReportStatusTypes.Modified))
         {
             stateRecord.Append(" (in version ")
-            .Append(previousVersion)
-            .Append(')');
+                .Append(previousVersion)
+                .Append(')');
         }
         
         return stateRecord.ToString();
